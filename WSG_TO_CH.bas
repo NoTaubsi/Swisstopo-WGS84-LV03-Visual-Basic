@@ -6,7 +6,7 @@ Function Convert_WGS84_DD_to_Sexagesimal_Seconds(latitude As Double) As Double
     Dim minutes As Double: minutes = Int((latitude - degrees) * 60)
     Dim seconds As Double: seconds = ((latitude - degrees) * 3600) - (minutes * 60)
     
-    'Ergebnis zurückgeben
+    'Ergebnis zurueckgeben
     Convert_WGS84_DD_to_Sexagesimal_Seconds = (degrees * 3600) + (minutes * 60) + seconds
 
 End Function
@@ -23,7 +23,7 @@ Function WGStoCHy(X As Double, Y As Double) As Double
     'Process X
     Dim resultY As Double: resultY = 200147.07 + 308807.95 * X_aux + 3745.25 * (Y_aux ^ 2) + 76.63 * (X_aux ^ 2) - 194.56 * (Y_aux ^ 2) * X_aux + 119.79 * (X_aux ^ 3)
     
-    'Ergebnis zurückgeben
+    'Ergebnis zurueckgeben
     WGStoCHy = resultY
     
 End Function
@@ -40,7 +40,7 @@ Function WGStoCHx(X As Double, Y As Double) As Double
     'Process X
     Dim resultX As Double: resultX = 600072.37 + 211455.93 * Y_aux - 10938.51 * Y_aux * X_aux - 0.36 * Y_aux * (X_aux ^ 2) - 44.54 * (Y_aux ^ 3)
     
-    'Ergebnis zurückgeben
+    'Ergebnis zurueckgeben
     WGStoCHx = resultX
     
 End Function
