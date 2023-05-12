@@ -1,4 +1,4 @@
-Attribute VB_Name = "WSG_TO_CH"
+Attribute VB_Name = "WGS_TO_CH"
 Function Convert_WGS84_DD_to_Sexagesimal_Seconds(latitude As Double) As Double
 
     'Berechnung der sexagesimalen Sekunden
